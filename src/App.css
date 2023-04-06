@@ -51,3 +51,12 @@
   filter: blur(150px);
   z-index: -9;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > img {
+  width: 10rem;
+  height: 3rem;
+}

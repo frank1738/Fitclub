@@ -1,14 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import Logo from '../../assets/logo.png';
 import Bars from '../../assets/bars.png';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  const width = window.innerWidth <= 768 ? true : false;
   const [menu, openMenu] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <nav className="header">
+    <nav>
       <img src={Logo} alt="logo" className="logo" />
       {menu === false && width === true ? (
         <div
