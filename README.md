@@ -11,7 +11,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](gym-page-f507f.web.app)
+[Live Demo Link](https://gym-page-f507f.web.app)
 
 ## Authors
 
