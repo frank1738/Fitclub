@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Fit Club
 
 > This is a Gym website
@@ -13,7 +11,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](gym-page-f507f.web.app)
 
 ## Authors
 
